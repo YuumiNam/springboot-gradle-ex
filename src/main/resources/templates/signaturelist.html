@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<table>
+				<thead>
+				<tr>
+					<th>이름</th>
+					<th>이름</th>
+					<th>이름</th>
+					<th>이름</th>
+					<th>이름</th>
+					<th>이름</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr th:each="signature : ${signatures }">
+					<td th:text="${signature.userName }"></td>
+					<td th:text="${signature.cocktailName }"></td>
+					<td th:text="${signature.date }"></td>
+					<td th:text="${signature.cocktailContents }"></td>
+					<td th:text="${signature.recipeContents }"></td>
+					<td th:text="${signature.cocktailType }"></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

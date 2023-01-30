@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Signature</title>
+</head>
+<body>
+<div>
+	<form action="/signature" method="post">
+		<div>
+			<div>
+				<label for="name">이름</label>
+				<input type="text" id="name" name="userName" placeholder="이름을 입력하세요" />
+			</div>
+			
+			<div>
+				<label for="cocktail">칵테일</label>
+				<input type="text" id="cocktail" name="cocktailName" placeholder="칵테일명을 입력하세요" />
+			</div>
+			
+			<div>
+				<label for="contents">내용</label>
+				<input type="text" id="contents" name="cocktailContents" placeholder="내용을 입력하세요" />
+			</div>
+			
+			<div>
+				<label for="recipe">레시피</label>
+				<input type="text" id="recipe" name="recipeContents" placeholder="레시피를 입력하세요" />
+			</div>
+	
+			<div>
+				<label for="type">종류</label>
+				<input type="radio" id="type" name="cocktailType" value="alcohol" checked />알콜
+				<input type="radio" id="type" name="cocktailType" value="nonalcohol" />논알콜
+			</div>
+		</div>
+		<button type="submit">등록</button>
+	</form>
+	<a href="/signaturelist">목록보기</a>
+</div>
+</body>
+</html>
